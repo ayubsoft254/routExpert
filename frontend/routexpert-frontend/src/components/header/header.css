@@ -1,0 +1,104 @@
+/* Header/header.css */
+.header {
+    background-color: #515bb9;
+    padding: 2rem 0;
+    border-bottom: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  .header:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .header-content {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    width: 60px;
+    height: 60px;
+    background-color: #fff;
+    border-radius: 50%; /* Apply circular shape */
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+  }
+  
+  .logo img {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .info {
+    flex: 2;
+    padding: 0 2rem;
+  }
+  
+  .info h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .info p {
+    font-size: 1.2rem;
+    color: #f0eeee;
+  }
+  
+  .buttons {
+    margin-top: 1rem;
+  }
+  
+  .login-button,
+  .signup-button {
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+    background-color: #ff5722;
+    border: none;
+    border-radius: 25px; /* Rounded shape */
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  .login-button:hover,
+  .signup-button:hover {
+    background-color: #e64a19;
+    transform: translateY(-2px); /* Lift on hover */
+  }
+
+/* =============== MEDIA QUERIES (MEDIUM DEVICES) ==============*/
+@media screen and (max-width: 1024px) {
+  .about__container {
+      grid-template-columns: 1fr;
+      gap: 0;
+  }
+  .about__me {
+      width: 50%;
+      margin: 2rem auto 4rem;
+  }
+  .about__content p {
+      margin: 1rem 0 1.5rem;
+  }
+  }    
+
+/* =============== MEDIA QUERIES (SMALL DEVICES) ==============*/
+@media screen and (max-width: 600px) {
+  .about__me {
+      width: 65%;
+      margin: 0 auto 3rem;
+  }
+
+  .about__cards {
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      }
+  .about__content p {
+      margin: 1.5rem 0;
+  }
+}
