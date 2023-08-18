@@ -1,4 +1,4 @@
-# RouteXpert
+# RouteXpert 
 
 RouteXpert is a web application that optimizes routes for personal vehicles, helping users find the most efficient paths between multiple destinations.
 
@@ -44,16 +44,19 @@ RouteXpert is a web application that optimizes routes for personal vehicles, hel
   source venv/bin/activate   # On Windows: venv\Scripts\activate
   pip install -r requirements.txt
   python app.py
+
 ## Usage
 Access the RouteXpert web application in your browser at http://localhost:3000.
 Input your destinations and click "Optimize Route."
 View the optimized route on the interactive map.
-API Documentation
+
+## API Documentation
 The RouteXpert backend provides the following API endpoints:
 
 POST /api/optimize_route: Optimize the route based on input destinations.
 GET /api/user/:id/routes: Retrieve route history for a user (future feature).
-Contributing
+
+## Contributing
 Contributions are welcome! If you'd like to contribute to RouteXpert, please follow these steps:
 
 Fork the repository.
@@ -61,6 +64,7 @@ Create a new branch for your feature or bug fix.
 Make your changes and test thoroughly.
 Commit your changes and push to your fork.
 Submit a pull request to the main repository.
-License
+
+## License
 This project is licensed under the MIT License.
 
